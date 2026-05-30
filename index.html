@@ -8,10 +8,16 @@
     <meta name="description"
         content="New Star Hydraulics – Premier hose and hydraulic components supplier with branches in Hyderabad and Vijayawada. Industrial hoses, hydraulic fittings, and fluid power solutions." />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta property="og:title" content="New Star Hydraulics">
+    <meta property="og:description" content="Hydraulic Hoses, Industrial Hoses & Fittings">
+    <meta property="og:image" content="assets/images/logo/new-star-logo.png">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -194,6 +200,10 @@
                         <a href="tel:+919848413999" class="btn-branch btn-call"><i class="fa fa-phone"></i> Call</a>
                         <a href="https://maps.app.goo.gl/5evKfyG2H6dQFfE59" target="_blank" rel="noopener"
                             class="btn-branch btn-map"><i class="fa fa-directions"></i> Directions</a>
+                        <a href="https://wa.me/919848413999?text=Hello%20New%20Star%20Hydraulics%2C%0A%0AI%20visited%20your%20website%20and%20would%20like%20information%20about%20your%20hydraulic%20hoses%20and%20industrial%20products.%0A%0APlease%20contact%20me.%0A%0AThank%20you."
+                            target="_blank" rel="noopener" class="btn-branch btn-wa">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
                     </div>
                     <div class="branch-map">
                         <iframe
@@ -395,23 +405,30 @@
                     </div>
                     <form class="contact-form" id="contactFormHyd" action="https://api.web3forms.com/submit"
                         method="POST">
+
+                        <input type="hidden" name="access_key" value="ce8e12a0-3b01-447a-8d4b-9e636a4b8530">
+
+                        <input type="hidden" name="branch" value="Hyderabad">
+                        <input type="hidden" name="subject" value="New Star Hydraulics Website Enquiry">
+                        <input type="hidden" name="from_name" value="New Star Hydraulics Website">
+                        <input type="checkbox" name="botcheck" style="display:none;">
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Full Name *</label>
-                                <input type="text" placeholder="Your name" required />
+                                <input type="text" name="name" placeholder="Your name" required />
                             </div>
                             <div class="form-group">
                                 <label>Phone Number *</label>
-                                <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+                                <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" placeholder="your@email.com" />
+                            <input type="email" name="email" placeholder="your@email.com" />
                         </div>
                         <div class="form-group">
                             <label>Product / Service Required *</label>
-                            <select required>
+                            <select name="product_category" required>
                                 <option value="">Select a category</option>
                                 <option>Hydraulic Hoses</option>
                                 <option>Pneumatic Hoses</option>
@@ -424,7 +441,7 @@
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea rows="4" placeholder="Describe your requirement..."></textarea>
+                            <textarea name="message" rows="4" placeholder="Describe your requirement..."></textarea>
                         </div>
 
                         <button type="submit" class="btn-primary btn-full"><i class="fa fa-paper-plane"></i> Send
@@ -470,26 +487,58 @@
                             </div>
                         </div>
                         <div class="contact-social">
-                            <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/share/17pggbLkUJ/" target="_blank"
+                                rel="noopener noreferrer" class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <!-- Hyderabad WhatsApp -->
+                            <a href="https://wa.me/918121000263?text=Hello%20New%20Star%20Hydraulics%2C%0A%0AI%20visited%20your%20website%20and%20would%20like%20information%20about%20your%20hydraulic%20hoses%20and%20industrial%20products.%0A%0APlease%20contact%20me.%0A%0AThank%20you."
+                                target="_blank" rel="noopener noreferrer" class="social-btn whatsapp"
+                                title="Hyderabad Branch">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/new_star_hydraulics_?igsh=bDJiMnNiZ2J6MDNj"
+                                target="_blank" rel="noopener noreferrer" class="social-btn instagram"
+                                title="Follow us on Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <!-- Vijayawada WhatsApp -->
+                            <a href="https://wa.me/919848413999?text=Hello%20New%20Star%20Hydraulics%2C%0A%0AI%20visited%20your%20website%20and%20would%20like%20information%20about%20your%20hydraulic%20hoses%20and%20industrial%20products.%0A%0APlease%20contact%20me.%0A%0AThank%20you."
+                                target="_blank" rel="noopener noreferrer" class="social-btn whatsapp"
+                                title="Vijayawada Branch">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
                         </div>
                     </div>
-                    <form class="contact-form" id="contactFormVja">
+                    <form class="contact-form" id="contactFormVja" action="https://api.web3forms.com/submit"
+                        method="POST">
+
+                        <input type="hidden" name="access_key" value="b9ac1658-b6a2-4f99-a935-cc0fa2ebabc9">
+
+                        <input type="hidden" name="branch" value="Vijayawada">
+                        <input type="hidden" name="subject" value="New Star Hydraulics Website Enquiry">
+                        <input type="hidden" name="from_name" value="New Star Hydraulics Website">
+                        <input type="checkbox" name="botcheck" style="display:none;">
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Full Name *</label>
                                 <input type="text" name="name" placeholder="Your name" required />
                             </div>
+
                             <div class="form-group">
                                 <label>Phone Number *</label>
                                 <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
                             </div>
                         </div>
+
                         <div class="form-group">
                             <label>Email Address</label>
                             <input type="email" name="email" placeholder="your@email.com" />
                         </div>
+
                         <div class="form-group">
                             <label>Product / Service Required *</label>
                             <select name="product_category" required>
@@ -503,15 +552,22 @@
                                 <option>Other</option>
                             </select>
                         </div>
+
                         <div class="form-group">
                             <label>Message</label>
                             <textarea name="message" rows="4" placeholder="Describe your requirement..."></textarea>
                         </div>
-                        <input type="hidden" name="branch" value="Vijayawada" />
-                        <button type="submit" class="btn-primary btn-full"><i class="fa fa-paper-plane"></i> Send
-                            Enquiry – Vijayawada</button>
-                        <div class="form-success"><i class="fa fa-check-circle"></i> Thank you! Our Vijayawada team will
-                            contact you shortly.</div>
+
+                        <button type="submit" class="btn-primary btn-full">
+                            <i class="fa fa-paper-plane"></i>
+                            Send Enquiry – Vijayawada
+                        </button>
+
+                        <div class="form-success">
+                            <i class="fa fa-check-circle"></i>
+                            Thank you! Our Vijayawada team will contact you shortly.
+                        </div>
+
                     </form>
                 </div>
             </div>
@@ -521,26 +577,45 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
+
         <div class="container footer-grid">
+
+            <!-- Brand -->
             <div class="footer-brand">
                 <div class="logo">
-                    <span class="logo-icon"><i class="fa fa-cogs"></i></span>
+                    <span class="logo-icon">
+                        <img src="assets/images/logo/new-star-logo.png" alt="New Star Hydraulics Logo">
+                    </span>
+
                     <div class="logo-text">
                         <span class="logo-main">NEW STAR</span>
                         <span class="logo-sub">HYDRAULICS</span>
                     </div>
                 </div>
-                <p>Your trusted partner for hydraulic and industrial hose solutions across Telangana &amp; Andhra
-                    Pradesh.</p>
+
+                <p>
+                    Your trusted partner for hydraulic and industrial hose solutions
+                    across Telangana &amp; Andhra Pradesh.
+                </p>
+
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/918121000263" target="_blank" rel="noopener"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="https://www.facebook.com/share/17pggbLkUJ/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://wa.me/918121000263" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/new_star_hydraulics_" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
                 </div>
             </div>
 
+            <!-- Quick Links -->
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
@@ -553,34 +628,76 @@
                 </ul>
             </div>
 
+            <!-- Hyderabad -->
             <div class="footer-col">
                 <h4>Hyderabad Branch</h4>
+
                 <ul class="footer-contact">
-                    <li><i class="fa fa-map-marker-alt"></i> Pedda Amberpet, Hyderabad – 501513</li>
-                    <li><i class="fa fa-phone"></i> <a href="tel:+918121000263">+91 81210 00263</a></li>
-                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918121000263" target="_blank"
-                            rel="noopener">WhatsApp</a></li>
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        Pedda Amberpet, Hyderabad – 501513
+                    </li>
+
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+918121000263">
+                            +91 81210 00263
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/918121000263" target="_blank" rel="noopener">
+                            WhatsApp
+                        </a>
+                    </li>
                 </ul>
             </div>
 
+            <!-- Vijayawada -->
             <div class="footer-col">
                 <h4>Vijayawada Branch</h4>
+
                 <ul class="footer-contact">
-                    <li><i class="fa fa-map-marker-alt"></i> Kanuru, Vijayawada – 520007</li>
-                    <li><i class="fa fa-phone"></i> <a href="tel:+919848413999">+91 98484 13999</a></li>
-                    <li><i class="fa fa-clock"></i> Mon–Sat: 9 AM – 9 PM</li>
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        Kanuru, Vijayawada – 520007
+                    </li>
+
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+919848413999">
+                            +91 98484 13999
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/919848413999" target="_blank" rel="noopener">
+                            WhatsApp
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-clock"></i>
+                        Mon–Sat: 9 AM – 9 PM
+                    </li>
                 </ul>
             </div>
+
         </div>
+
         <div class="footer-bottom">
             <div class="container">
                 <p>&copy; 2025 New Star Hydraulics. All Rights Reserved.</p>
+
                 <div>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
                 </div>
             </div>
         </div>
+
     </footer>
 
     <!-- Back to top -->
@@ -588,11 +705,21 @@
         <i class="fa fa-chevron-up"></i>
     </button>
 
-    <!-- WhatsApp Float (HYD branch) -->
-    <a href="https://wa.me/918121000263?text=Hello%2C%20I%20am%20interested%20in%20your%20hydraulic%20products.%20Please%20share%20more%20details."
-        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <!-- Floating Call Button -->
+    <a href="tel:+918121000263" class="floating-call" aria-label="Call Hyderabad Branch">
+
+        <i class="fas fa-phone-alt"></i>
+        <span class="call-tooltip">Call 📞 HYD Branch</span>
+
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918121000263?text=Hello%20New%20Star%20Hydraulics,%20I%20am%20interested%20in%20your%20products."
+        target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+
         <i class="fab fa-whatsapp"></i>
-        <span class="wa-tooltip">Chat – HYD Branch</span>
+        <span class="wa-tooltip">Chat 💬 HYD Branch</span>
+
     </a>
 
     <script src="assets/js/products-data.js"></script>
