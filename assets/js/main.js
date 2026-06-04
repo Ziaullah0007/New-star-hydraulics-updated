@@ -111,23 +111,18 @@ ctabs.forEach(tab => {
 // ===== CONTACT FORMS =====
 function setupForm(formId) {
   const form = document.getElementById(formId);
+
   if (!form) return;
-  form.addEventListener('submit', e => {
-    e.preventDefault();
+
+  form.addEventListener('submit', () => {
     const btn = form.querySelector('button[type="submit"]');
-    const msg = form.querySelector('.form-success');
+
     btn.disabled = true;
-    btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Sending...';
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.innerHTML = btn.innerHTML.replace('fa-spinner fa-spin', 'fa-paper-plane').replace('Sending...', btn.textContent.trim().replace(/.*Sending\.\.\./, ''));
-      // Restore original button text
-      const branch = form.querySelector('input[name="branch"]').value;
-      btn.innerHTML = `<i class="fa fa-paper-plane"></i> Send Enquiry – ${branch}`;
-      if (msg) { msg.style.display = 'block'; form.reset(); setTimeout(() => msg.style.display = 'none', 5000); }
-    }, 1500);
+    btn.innerHTML =
+      '<i class="fa fa-spinner fa-spin"></i> Sending...';
   });
 }
+
 setupForm('contactFormHyd');
 setupForm('contactFormVja');
 
